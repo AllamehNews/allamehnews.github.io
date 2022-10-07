@@ -2,7 +2,7 @@ var news_data = {
   "news-1": {
     title: "شروع کار  نیوز",
     description: "meow",
-    page: "./articles/testnews.html",
+    page: "./articles/testnews",
     image: "./assets/Banners/SHORATEST.jpg",
     date: "date",
     isHot: false,
@@ -13,7 +13,7 @@ var news_data = {
     title: "شروع کار علامه نیوز",
     description:
       "علامه نیوز فعالیت خود را به عنوان تنها خبرگذاری معتبر علامه حلی 3 شروع کرد",
-    page: "./articles/testnews.html",
+    page: "./articles/testnews",
     image: "./assets/Banners/SHORATEST.jpg",
     date: "14 مهر 1401",
     isHot: false,
@@ -23,7 +23,7 @@ var news_data = {
   "news-3": {
     title: "خبر اسپانسری",
     description: "علامه نیوز فعاه حلی 3 شروع کرد",
-    page: "./articles/testnews.html",
+    page: "./articles/testnews",
     image: "./assets/Banners/SHORATEST.jpg",
     date: "14 مهر 1401",
     isHot: false,
@@ -33,7 +33,7 @@ var news_data = {
   "news-4": {
     title: "خبر پیشنهادی",
     description: "علامه نیوز فعالیت د",
-    page: "./articles/testnews.html",
+    page: "./articles/testnews",
     image: "./assets/Banners/SHORATEST.jpg",
     date: "14 مهر 1401",
     isHot: false,
@@ -44,7 +44,7 @@ var news_data = {
     title: "شروع کار علامه نیوز",
     description:
       "علامه نیوز فعالیت خود را به عنوان تنها خبرگذاری معتبر علامه حلی 3 شروع کرد",
-    page: "./articles/testnews.html",
+    page: "./articles/testnews",
     image: "./assets/Banners/SHORATEST.jpg",
     date: "14 مهر 1401",
     isHot: true,
