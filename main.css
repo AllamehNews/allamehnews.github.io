@@ -152,6 +152,7 @@ body {
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .article-container {
@@ -298,10 +299,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin-right: 0px;
-  }
-
-  .news-container {
-    justify-content: center;
   }
 
   .article-container {

@@ -39,49 +39,7 @@
     </div>
 
     <p class="section-header">اخبار داغ</p>
-    <div class="news-container">
-        <a class="article-container">
-            <img src="./assets/Banners/SHORATEST.jpg" />
-            <p class="title">شروع کار علامه نیوز</p>
-            <p class="description">علامه نیوز فعالیت خود را به عنوان تنها خبرگذاری معتبر علامه حلی 3 شروع کرد</p>
-            <p class="date">14 مهر 1401</p>
-        </a>
-        <a class="article-container">
-            <img src="./assets/Banners/shoraflag.png" />
-            <p class="title">شروع کار علامه نیوز</p>
-            <p class="description">علامه نیوز فعالیت خود را به عنوان تنها خبرگذاری معتبر علامه حلی 3 شروع کرد</p>
-            <p class="date">14 مهر 1401</p>
-        </a>
-        <a class="article-container">
-            <img src="./assets/Banners/SHORATEST.jpg" />
-            <p class="title">شروع کار علامه نیوز</p>
-            <p class="description">علامه نیوز فعالیت خود را به عنوان تنها خبرگذاری معتبر علامه حلی 3 شروع کرد</p>
-            <p class="date">14 مهر 1401</p>
-        </a>
-        <a class="article-container">
-            <img src="./assets/Banners/SHORATEST.jpg" />
-            <p class="title">شروع کار علامه نیوز</p>
-            <p class="description">علامه نیوز فعالیت خود را به عنوان تنها خبرگذاری معتبر علامه حلی 3 شروع کرد</p>
-            <p class="date">14 مهر 1401</p>
-        </a>
-        <a class="article-container">
-            <img src="./assets/Banners/SHORATEST.jpg" />
-            <p class="title">شروع کار علامه نیوز</p>
-            <p class="description">علامه نیوز فعالیت خود را به عنوان تنها خبرگذاری معتبر علامه حلی 3 شروع کرد</p>
-            <p class="date">14 مهر 1401</p>
-        </a>
-        <a class="article-container">
-            <img src="./assets/Banners/SHORATEST.jpg" />
-            <p class="title">شروع کار علامه نیوز</p>
-            <p class="description">علامه نیوز فعالیت خود را به عنوان تنها خبرگذاری معتبر علامه حلی 3 شروع کرد</p>
-            <p class="date">14 مهر 1401</p>
-        </a>
-        <a class="article-container">
-            <img src="./assets/Banners/shoraflag.png" />
-            <p class="title">شروع کار علامه نیوز</p>
-            <p class="description">علامه نیوز فعالیت خود را به عنوان تنها خبرگذاری معتبر علامه حلی 3 شروع کرد</p>
-            <p class="date">14 مهر 1401</p>
-        </a>
+    <div class="news-container" id="hottest-news">
 
     </div>
 
@@ -122,5 +80,16 @@
         <a href="./licensing.html">Licensing</a> <br />
     </p>
 </body>
+
+<script type="text/javascript" src="./news-database.js"></script>
+<script>
+    // Sponsored News
+    var hottest_news_container = document.getElementById("hottest-news");
+    for (const article in news_data) {
+        if (news_data.hasOwnProperty(article) && news_data[article]["isHot"] === true) {
+            hottest_news_container.innerHTML += `<a class="article-container" href="${news_data[article]["page"]}"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
+        }
+    }
+</script>
 
 </html>
