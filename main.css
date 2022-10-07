@@ -39,11 +39,16 @@ body {
 
 .header-div .links {
   margin-right: 20px;
+  display: flex;
 }
 
 .header-div a {
   margin-right: 20px;
   font-size: 25px;
+
+  text-decoration: none;
+  display: block;
+  color: var(--background-color);
 
   cursor: pointer;
   transition: 0.25s;
@@ -140,7 +145,7 @@ body {
   font-weight: 700;
 }
 
-.hottest-news {
+.news-container {
   padding: 50px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -159,6 +164,8 @@ body {
   cursor: pointer;
   margin-left: 20px;
   margin-bottom: 20px;
+
+  text-decoration: none;
 }
 
 .article-container img {
@@ -293,7 +300,7 @@ body {
     margin-right: 0px;
   }
 
-  .hottest-news {
+  .news-container {
     justify-content: center;
   }
 
