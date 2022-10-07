@@ -99,6 +99,10 @@ body {
   border-radius: 6px;
 }
 
+.special-event-banner img {
+  border-radius: 6px;
+}
+
 .special-event-banner button {
   background-color: var(--background-color-2);
   outline: none;
