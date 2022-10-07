@@ -125,6 +125,11 @@ body {
   animation: rotating 1s ease-in-out alternate-reverse infinite;
 }
 
+.special-event-banner button a {
+  text-decoration: none;
+  color: var(--text-color-2);
+}
+
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(-15deg);
