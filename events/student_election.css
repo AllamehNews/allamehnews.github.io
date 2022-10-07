@@ -21,3 +21,15 @@
   border-radius: 6px;
   border-style: none;
 }
+
+.article-person-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  cursor: auto;
+}
+
+.article-person-container img {
+  width: 166px;
+}
