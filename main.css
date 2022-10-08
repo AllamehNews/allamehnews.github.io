@@ -177,6 +177,12 @@ body {
   justify-content: center;
 }
 
+.news-container .no-article {
+  color: var(--text-color-2);
+  font-size: 20px;
+  margin-top: -15px;
+}
+
 .article-container {
   width: 250px;
   display: flex;

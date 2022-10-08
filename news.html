@@ -44,7 +44,7 @@
 
     <p class="section-header">اخبار اسپانسر شده</p>
     <div class="news-container" id="sponsored-news">
-
+        <p class="no-article" id="sponsored-news-no-article">مقاله ای موجود نیست</p>
     </div>
 
     <p class="section-header">تمامی اخبار</p>
@@ -67,10 +67,15 @@
 
     // Sponsored News
     var sponsored_news_container = document.getElementById("sponsored-news");
+    var sponsored_news_counter = 0;
     for (const article in news_data) {
         if (news_data.hasOwnProperty(article) && news_data[article]["isSponsored"] === true) {
+            sponsored_news_counter += 1;
             sponsored_news_container.innerHTML += `<a class="article-container" href="${news_data[article]["page"]}"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
         }
+    }
+    if (sponsored_news_counter > 0) {
+        sponsored_news_container.removeChild(document.getElementById("sponsored-news-no-article"));
     }
 
     // Recommended News
