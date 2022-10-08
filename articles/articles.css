@@ -1,0 +1,44 @@
+.main-article {
+  display: flex;
+  margin-top: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.main-article .right,
+.main-article .left {
+  width: 50%;
+}
+
+.main-article .right {
+  display: flex;
+  justify-content: center;
+}
+.main-article .right img {
+  width: 90%;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: var(--background-color-2);
+  /* filter: drop-shadow(1px 1px 10px black); */
+}
+
+.main-article .left .article-description {
+  color: var(--text-color-2);
+  font-size: 20px;
+
+  text-align: justify;
+}
+
+.main-article .left .author {
+  color: var(--text-color-4);
+  margin-top: -15px;
+}
+
+.main-article .left .old-warning {
+  background-color: var(--background-color-2);
+  color: var(--background-color);
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+}

@@ -4,6 +4,7 @@
   --text-color-1: #c23c45;
   --text-color-2: #fff;
   --text-color-3: #0a0507;
+  --text-color-4: rgb(200, 200, 200);
 }
 
 @font-face {
@@ -190,7 +191,6 @@ body {
   background-color: var(--background-color-2);
   padding: 10px;
   border-radius: 6px;
-  cursor: pointer;
   margin-left: 20px;
   margin-bottom: 20px;
 
