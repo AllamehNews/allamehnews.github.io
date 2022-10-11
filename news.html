@@ -26,7 +26,12 @@
         <img src="./assets/Logo_Payiz.png" width="80px" />
         <div class="links">
             <a style="margin-right: 0px;" href="./">صفحه اصلی</a>
-            <a href="./news">اخبار ها</a>
+            <a href="./news" class="header-news">
+                <div class="number-of-new-news" id="number-of-new-news">2</div>
+                <p>
+                    اخبار ها
+                </p>
+            </a>
             <a href="./partnering">همکاری و ارتباط با ما</a>
         </div>
     </div>
@@ -101,14 +106,21 @@
     // Newset News
     var newest_news_container = document.getElementById("newsest-news");
     var newest_counter = 0;
+
+    console.log(Object.keys(news_data).length);
     for (const article in news_data) {
-        if (news_data.hasOwnProperty(article) && newest_counter < 3) {
+        console.log(newest_counter)
+        if (news_data.hasOwnProperty(article) && newest_counter >= Object.keys(news_data).length - 3) {
             if (news_data[article]["page"] != "none") {
                 newest_news_container.innerHTML += `<a class="article-container" href="${news_data[article]["page"]}"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
             } else {
                 newest_news_container.innerHTML += `<a class="article-container"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
             }
-            newest_counter += 1
         }
+        newest_counter += 1
     }
+
+    // Header News Counter
+    var news_ammount_text = document.getElementById("number-of-new-news");
+    news_ammount_text.innerText = Object.keys(news_data).length;
 </script>

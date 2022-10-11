@@ -12,8 +12,13 @@
   src: url("./fonts/Far_Casablanca.ttf");
 }
 
+@font-face {
+  font-family: "Nevis Bold";
+  src: url("./fonts/nevis.woff");
+}
+
 * {
-  font-family: "Far_Casablanca", Arial, sans-serif;
+  font-family: "Far_Casablanca", "Nevis Bold", Arial, sans-serif;
 }
 
 html,
@@ -44,16 +49,38 @@ body {
   display: flex;
 }
 
+.header-div .header-news p {
+  margin: 0px;
+  padding-right: 30px;
+  display: flex;
+  width: fit-content;
+}
+
+.header-div .number-of-new-news {
+  background-color: var(--text-color-1);
+  color: var(--text-color-2);
+  display: flex;
+  width: fit-content;
+  position: absolute;
+
+  padding-right: 7px;
+  padding-left: 7px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
 .header-div a {
   margin-right: 20px;
   font-size: 25px;
 
   text-decoration: none;
-  display: block;
   color: var(--background-color);
 
   cursor: pointer;
   transition: 0.25s;
+
+  display: flex;
+  align-items: center;
 }
 
 .header-div a:hover {
@@ -133,31 +160,49 @@ body {
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
-    -webkit-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
   to {
-    -webkit-transform: rotate(15deg);
-    -o-transform: rotate(15deg);
-    transform: rotate(15deg);
+    -webkit-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
   }
 }
 @keyframes rotating {
   from {
-    -ms-transform: rotate(-15deg);
-    -moz-transform: rotate(-15deg);
-    -webkit-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
-    transform: rotate(-15deg);
+    -ms-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
   to {
-    -ms-transform: rotate(15deg);
-    -moz-transform: rotate(15deg);
-    -webkit-transform: rotate(15deg);
-    -o-transform: rotate(15deg);
-    transform: rotate(15deg);
+    -ms-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
   }
+}
+
+.special-event-banner .date-counter {
+  background-color: var(--background-color-2);
+  color: var(--text-color-2);
+
+  font-size: 20px;
+  border-radius: 6px;
+
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+
+  -webkit-animation: rotating 3s ease-in-out alternate-reverse infinite;
+  -moz-animation: rotating 3s ease-in-out alternate-reverse infinite;
+  -ms-animation: rotating 3s ease-in-out alternate-reverse infinite;
+  -o-animation: rotating 3s ease-in-out alternate-reverse infinite;
+  animation: rotating 3s ease-in-out alternate-reverse infinite;
 }
 
 .section-header {
@@ -445,7 +490,7 @@ body {
 .picture-banner .channels a {
   color: white;
   margin-right: 10px;
-  font-family: "Far_Casablanca";
+  font-family: "Far_Casablanca", "Nevis Bold", Arial, sans-serif;
   font-size: 20px;
 
   margin-top: 0px;

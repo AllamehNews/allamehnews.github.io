@@ -26,7 +26,12 @@
         <img src="./assets/Logo_Payiz.png" width="80px" />
         <div class="links">
             <a style="margin-right: 0px;" href="./">صفحه اصلی</a>
-            <a href="./news">اخبار ها</a>
+            <a href="./news" class="header-news">
+                <div class="number-of-new-news" id="number-of-new-news">2</div>
+                <p>
+                    اخبار ها
+                </p>
+            </a>
             <a href="./partnering">همکاری و ارتباط با ما</a>
         </div>
     </div>
@@ -75,5 +80,12 @@
     </div>
 
 </body>
+
+<script type="text/javascript" src="./news-database.js"></script>
+<script>
+    // Header News Counter
+    var news_ammount_text = document.getElementById("number-of-new-news");
+    news_ammount_text.innerText = Object.keys(news_data).length;
+</script>
 
 </html>

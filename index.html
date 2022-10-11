@@ -27,7 +27,12 @@
         <img src="./assets/Logo_Payiz.png" width="80px" />
         <div class="links">
             <a style="margin-right: 0px;" href="./">صفحه اصلی</a>
-            <a href="./news">اخبار ها</a>
+            <a href="./news" class="header-news">
+                <div class="number-of-new-news" id="number-of-new-news">2</div>
+                <p>
+                    اخبار ها
+                </p>
+            </a>
             <a href="./partnering">همکاری و ارتباط با ما</a>
         </div>
     </div>
@@ -49,7 +54,8 @@
         <div class="left">
             <p class="title" style="margin-bottom: 20px; opacity: 0;">ویژه برنامه شورا</p>
             <img src="./assets/Banners/shoraflag.png" width="90%" />
-            <button><a href="./events/council_election">بزن بریم</a>!</button>
+            <!-- <button><a href="./events/council_election">بزن بریم</a>!</button> -->
+            <p class="date-counter" id="date-counter">در حال بارگزاری...</p>
         </div>
 
     </div>
@@ -58,7 +64,7 @@
     <div class="news-container" id="hottest-news">
 
     </div>
-
+    <!-- 
     <p class="section-header">درباره ما</p>
     <div class="people">
         <div class="person" style="margin-right: 0px;">
@@ -76,7 +82,7 @@
             <p class="person-name">پرهام مرادی</p>
             <p class="role">مجری و خبرنگار</p>
         </div>
-    </div>
+    </div> -->
 
     <p class="section-header">همکاران ما</p>
     <div class="partners">
@@ -110,6 +116,32 @@
             }
         }
     }
+
+    // Header News Counter
+    var news_ammount_text = document.getElementById("number-of-new-news");
+    news_ammount_text.innerText = Object.keys(news_data).length;
+
+    // Event CountDown
+    var countDownDate = new Date("Oct 14, 2022 18:00:00").getTime();
+
+    var x = setInterval(function () {
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("date-counter").textContent = days + "\u00A0" + "روز" + "\u00A0\u00A0" + hours + "\u00A0" + "ساعت" + "\u00A0\u00A0"
+            + minutes + "\u00A0" + "دقیقه " + "\u00A0\u00A0" + seconds + "\u00A0" + "ثانیه ";
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("date-counter").innerText = "به زودی...";
+        }
+    }, 1000);
 </script>
 
 </html>
