@@ -3,7 +3,7 @@ var news_data = {
     title: "شروع کار علامه نیوز",
     description:
       "با شروع روند انتخابات شورای نهم، علامه نیوز کار خود را شروع کرد.",
-    page: "./articles/news-1.html",
+    page: "./articles/news-1",
     image: "./assets/News/news-1.jpg",
     date: "16 مهر 1401",
     isHot: false,
@@ -25,7 +25,7 @@ var news_data = {
     title: "استرس بعضی از بچه ها در مورد امتحان و مشق برنامه نویسی",
     description:
       "بعضی از بچه های پایه نهم که از فناوری پارسال HTML را به خوبی یاد نگرفته اند ترس شدیدی برای آزمون برنامه نویسی دارند، ولی ما اینجاییم تا به شما منابع آموزشی جذابی بدیم، البته اگر نت اجازه دهد!",
-    page: "./articles/news-4.html",
+    page: "./articles/news-4",
     image: "./assets/News/news-4.jpg",
     date: "16 مهر 1401",
     isHot: false,
@@ -36,7 +36,7 @@ var news_data = {
     title: "بچه ها در انتظار انتخابات شورا",
     description:
       "بچه ها بی صبرانه منتظر رقابتی که در انتخابات شورای نهم اتفاق خواهد افتاد هستند.",
-    page: "./articles/news-3.html",
+    page: "./articles/news-3",
     image: "./assets/News/news-3.png",
     date: "16 مهر 1401",
     isHot: true,
