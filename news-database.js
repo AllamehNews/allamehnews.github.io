@@ -50,7 +50,7 @@ var news_data = {
     page: "none",
     image: "./assets/News/news-2.jpg",
     date: "19 مهر 1401",
-    isHot: true,
+    isHot: false,
     isRecommended: false,
     isSponsored: false,
   },
@@ -63,6 +63,17 @@ var news_data = {
     date: "19 مهر 1401",
     isHot: true,
     isRecommended: false,
+    isSponsored: false,
+  },
+  "news-7": {
+    title: "بچه ها در انتظار شب مانی در مدرسه",
+    description:
+      "پس از برگزار نشدن شب مانی در پایه هشتم، بالاخره بعد از کلی میم و بازی ترسناک شب مانی پایه نهم برگزار خواهد شد. برای اطلاعات بیشتر کلیک کنید",
+    page: "./articles/news-5",
+    image: "./assets/News/news-7.jpg",
+    date: "26 مهر 1401",
+    isHot: true,
+    isRecommended: true,
     isSponsored: false,
   },
 };
