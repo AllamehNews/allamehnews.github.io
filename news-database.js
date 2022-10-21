@@ -72,6 +72,28 @@ var news_data = {
     page: "./articles/news-5",
     image: "./assets/News/news-7.jpg",
     date: "26 مهر 1401",
+    isHot: false,
+    isRecommended: true,
+    isSponsored: false,
+  },
+  "news-8": {
+    title: "اولین آزمون جامع پایه نهم با چاشنی بیماری",
+    description:
+      "اولین آزمون جامع پایه نهم که شامل دروس شیمی، زیست، فیزیک، ریاضی، تاریخ، معارف و عربی می باشد در دوشنبه در حین کلاس مشاوره برگزار خواهد شد. حتی با اینکه این هفته حدودا نصف مدرسه مریض بوده اند و توانایی خواندن درس را نداشته و هنوز ندارند.",
+    page: "none",
+    image: "./assets/News/news-8.png",
+    date: "29 مهر 1401",
+    isHot: true,
+    isRecommended: true,
+    isSponsored: false,
+  },
+  "news-9": {
+    title: "کنسل شدن انتخابات شورای پایه نهم به دلیل کمبود کاندید ها",
+    description:
+      "بنا بر اطلاعاتی که به دست ما رسیده است به دلیل کم بودن کاندید های شورا، انتخاباتی برگزار نخواهد شد و کاندید ها به شکل مستقیم وارد شورا خواهند شد.",
+    page: "./articles/news-9",
+    image: "./assets/News/news-9.jpg",
+    date: "29 مهر 1401",
     isHot: true,
     isRecommended: true,
     isSponsored: false,
