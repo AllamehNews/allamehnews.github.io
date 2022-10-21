@@ -88,7 +88,7 @@ body {
 }
 
 .special-event-banner {
-  background-image: url("./assets/Banners/SHORATEST.jpg");
+  background-image: url("./assets/Banners/ExhibitionBackground.png");
   padding: 30px;
 
   display: flex;
@@ -422,6 +422,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact-banner {
