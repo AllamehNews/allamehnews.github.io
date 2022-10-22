@@ -101,6 +101,8 @@ body {
 
 .special-event-banner {
   background-image: url("./assets/Banners/ExhibitionBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 30px;
 
   display: flex;

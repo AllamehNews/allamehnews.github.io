@@ -1,0 +1,60 @@
+.videos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.videos-container .coming-soon {
+  margin-top: -20px;
+  padding-top: 0px;
+
+  color: var(--text-color-2);
+  font-size: 20px;
+}
+
+.aparat-video {
+  width: 500px;
+  margin: 10px;
+}
+
+.aparat-video iframe {
+  border-radius: 6px;
+  border-style: none;
+}
+
+.article-person-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  cursor: auto;
+}
+
+.article-person-container img {
+  width: 166px;
+}
+
+.poll-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.poll-container form {
+  margin-bottom: 20px;
+}
+
+.poll-container form .poll-div {
+  width: 500px !important;
+  background-color: var(--background-color-2) !important;
+  border-radius: 6px;
+  color: var(--text-color-3) !important;
+}
+
+.poll-container form strong {
+  font-size: 18px;
+  font-weight: 700;
+
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+}
