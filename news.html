@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
     <!-- Meta -->
@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="تنها منبع خبری معتبر علامه حلی 3">
+    <meta name="description"
+        content="علامه نیوز تنها منبع معتبر اخبار دبیرستان دوره اول علامه حلی 3 می باشد. تمرکز این خبرگذاری روی اخبار مربوط به پایه نهم می باشد.">
     <meta name="keywords" content="News, School, اخبار, مدرسه, تیزهوشان, علامه حلی, علامه حلی 3">
     <meta name="author" content="علامه نیوز">
 
@@ -22,12 +23,12 @@
     <meta name="theme-color" content="#3a1d29">
 
     <!-- Title -->
-    <title>علامه نیوز</title>
+    <title>علامه نیوز، تنها منبع معتبر علامه حلی 3</title>
 </head>
 
 <body dir="rtl">
     <div class="header-div">
-        <img src="./assets/Logo_Payiz.png" width="80px" />
+        <img src="./assets/Logo_Payiz.png" width="80px" alt="لوگوی علامه نیوز" />
         <h1>علامه نیوز</h1>
         <div class="links">
             <a href="./" style="margin-right: 0px;">صفحه اصلی</a>
@@ -72,9 +73,9 @@
     for (const article in news_data) {
         if (news_data.hasOwnProperty(article)) {
             if (news_data[article]["page"] != "none") {
-                all_news_container.innerHTML += `<a class="article-container" href="${news_data[article]["page"]}"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
+                all_news_container.innerHTML += `<a class="article-container" href="${news_data[article]["page"]}"><img src="${news_data[article]["image"]}" alt="${news_data[article]["title"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
             } else {
-                all_news_container.innerHTML += `<a class="article-container"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
+                all_news_container.innerHTML += `<a class="article-container"><img src="${news_data[article]["image"]}" alt="${news_data[article]["title"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
             }
         }
     }
@@ -85,9 +86,9 @@
     for (const article in news_data) {
         if (news_data.hasOwnProperty(article) && news_data[article]["isSponsored"] === true) {
             if (news_data[article]["page"] != "none") {
-                sponsored_news_container.innerHTML += `<a class="article-container" href="${news_data[article]["page"]}"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
+                sponsored_news_container.innerHTML += `<a class="article-container" href="${news_data[article]["page"]}"><img src="${news_data[article]["image"]}" alt="${news_data[article]["title"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
             } else {
-                sponsored_news_container.innerHTML += `<a class="article-container"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
+                sponsored_news_container.innerHTML += `<a class="article-container"><img src="${news_data[article]["image"]}" alt="${news_data[article]["title"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
             }
             sponsored_news_counter += 1;
         }
@@ -101,9 +102,9 @@
     for (const article in news_data) {
         if (news_data.hasOwnProperty(article) && news_data[article]["isRecommended"] === true) {
             if (news_data[article]["page"] != "none") {
-                recommended_news_container.innerHTML += `<a class="article-container" href="${news_data[article]["page"]}"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
+                recommended_news_container.innerHTML += `<a class="article-container" href="${news_data[article]["page"]}"><img src="${news_data[article]["image"]}" alt="${news_data[article]["title"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
             } else {
-                recommended_news_container.innerHTML += `<a class="article-container"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
+                recommended_news_container.innerHTML += `<a class="article-container"><img src="${news_data[article]["image"]}" alt="${news_data[article]["title"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
             }
         }
     }
@@ -117,9 +118,9 @@
         console.log(newest_counter)
         if (news_data.hasOwnProperty(article) && newest_counter >= Object.keys(news_data).length - 3) {
             if (news_data[article]["page"] != "none") {
-                newest_news_container.innerHTML += `<a class="article-container" href="${news_data[article]["page"]}"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
+                newest_news_container.innerHTML += `<a class="article-container" href="${news_data[article]["page"]}"><img src="${news_data[article]["image"]}" alt="${news_data[article]["title"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
             } else {
-                newest_news_container.innerHTML += `<a class="article-container"><img src="${news_data[article]["image"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
+                newest_news_container.innerHTML += `<a class="article-container"><img src="${news_data[article]["image"]}" alt="${news_data[article]["title"]}" /><p class="title">${news_data[article]["title"]}</p><p class="description">${news_data[article]["description"]}</p><p class="date">${news_data[article]["date"]}</p></a>`;
             }
         }
         newest_counter += 1
