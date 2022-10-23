@@ -83,8 +83,8 @@ var news_data = {
     page: "none",
     image: "./assets/News/news-8.png",
     date: "29 مهر 1401",
-    isHot: true,
-    isRecommended: true,
+    isHot: false,
+    isRecommended: false,
     isSponsored: false,
   },
   "news-9": {
@@ -94,6 +94,17 @@ var news_data = {
     page: "./articles/news-9",
     image: "./assets/News/news-9.jpg",
     date: "29 مهر 1401",
+    isHot: true,
+    isRecommended: true,
+    isSponsored: false,
+  },
+  "news-10": {
+    title: "نسل شدن آزمون جامع دوشنبه به دلیل شیوع بیماری",
+    description:
+      "بنا بر اعلام آشیانه 12 به دلیل شیوع بیماری در مدرسه آزمون جامع دوشنبه پایه نهم کنسل شد و در زمان دیگری برگزار خواهد شد",
+    page: "none",
+    image: "./assets/News/news-8.png",
+    date: "1 آبان 1401",
     isHot: true,
     isRecommended: true,
     isSponsored: false,
