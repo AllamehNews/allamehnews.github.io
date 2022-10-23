@@ -22,16 +22,32 @@
   border-style: none;
 }
 
-.article-person-container {
+.article-person-container,
+.article-etelafad-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: fit-content;
   cursor: auto;
+  width: 166px;
 }
 
-.article-person-container img {
-  width: 166px;
+.article-etelafad-container {
+  width: 250px;
+}
+
+.article-etelafad-container .img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: var(--background-color);
+}
+
+.article-etelafad-container img {
+  width: auto;
+  max-width: 250px;
+  height: 140px;
 }
 
 .poll-container {
