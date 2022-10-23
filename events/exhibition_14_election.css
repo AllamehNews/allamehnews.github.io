@@ -50,6 +50,10 @@
   height: 140px;
 }
 
+.etelaf-container {
+  width: 200px;
+}
+
 .poll-container {
   flex-direction: column;
   align-items: center;
